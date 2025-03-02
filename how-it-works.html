@@ -4,43 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How VPN Works</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <h1>VPN Simulation</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="how-it-works.html">How It Works</a></li>
                 <li><a href="simulation.html">Simulation</a></li>
-                <li><a href="security.html">Security Insights</a></li>
+                <li><a href="security.html">Security</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="dark-mode-toggle">
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider"></span>
+            </label>
+        </div>
     </header>
-    
-    <section class="hero">
-        <h1>How VPN Works</h1>
-        <p>Learn about encryption, tunneling, and security protocols that protect your online communication.</p>
+
+    <section class="how-it-works">
+        <h2>Understanding VPN Technology</h2>
+        <p>A VPN (Virtual Private Network) encrypts your internet connection, hiding your online activity and protecting your data.</p>
+
+        <div class="vpn-steps">
+            <div class="step">
+                <h3>Step 1: Connect to a VPN Server</h3>
+                <p>Your device connects to a remote VPN server through a secure tunnel.</p>
+                
+            </div>
+
+            <div class="step">
+                <h3>Step 2: Encryption & IP Masking</h3>
+                <p>All data is encrypted, and your real IP address is hidden.</p>
+                
+            </div>
+
+            <div class="step">
+                <h3>Step 3: Secure & Anonymous Browsing</h3>
+                <p>Now you can browse safely with full privacy!</p>
+                
+            </div>
+        </div>
+
+        <img src="assets\images\vpn.png" alt="VPN Step">
+
+        <div class="video-container">
+            <h2>Watch How a VPN Works</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_wQTRMBAvzg" frameborder="0" allowfullscreen></iframe>
+        </div>
     </section>
-    
-    <section class="content">
-        <h2>Understanding VPN Encryption</h2>
-        <p>VPNs use encryption protocols like AES-256 to secure your internet connection.</p>
-    </section>
-    
-    <section class="content">
-        <h2>Tunneling Protocols</h2>
-        <p>Protocols like OpenVPN, IPSec, and WireGuard help securely transmit data over the internet.</p>
-    </section>
-    
-    <section class="content">
-        <h2>Benefits of VPN</h2>
-        <p>VPNs ensure privacy, protect data, and enable secure remote access.</p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 VPN Simulation. All rights reserved.</p>
-    </footer>
 </body>
 </html>

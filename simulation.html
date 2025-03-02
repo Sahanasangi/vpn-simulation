@@ -4,37 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VPN Simulation</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
+        <h1>VPN Simulation</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="how-it-works.html">How It Works</a></li>
                 <li><a href="simulation.html">Simulation</a></li>
-                <li><a href="security.html">Security Insights</a></li>
+                <li><a href="security.html">Security</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="dark-mode-toggle">
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider"></span>
+            </label>
+        </div>
     </header>
-    
-    <section class="hero">
-        <h1>VPN Simulation</h1>
-        <p>Experience how VPN encrypts and transmits your data securely.</p>
+
+    <section class="vpn-simulation">
+        <h2>Simulate a VPN Connection</h2>
+        <p>Enter your IP address and click "Connect to VPN" to see how a VPN secures your connection.</p>
+
+        <label for="user-ip">Your IP Address:</label>
+        <input type="text" id="user-ip" placeholder="e.g., 192.168.1.1">
+        <button onclick="connectToVPN()">Connect to VPN</button>
+
+        <div id="simulation-container">
+            <div class="internet">🌐 Internet</div>
+            <div class="data normal">📦 Unsecured Data</div>
+            <div class="vpn-server">🔒 VPN Server</div>
+            <div class="data encrypted">🔐 Encrypted Data</div>
+            <div class="destination">🏠 Secure Destination</div>
+        </div>
+
+        <p id="vpn-status"></p>
     </section>
-    
-    <section class="content">
-        <h2>Real-Time VPN Encryption Demo</h2>
-        <p>Simulate how data is encrypted and routed through a secure tunnel.</p>
-        <button id="simulateBtn" class="btn">Start Simulation</button>
-        <div id="simulationResult" class="simulation-box"></div>
-    </section>
-    
-    <script src="assets/js/script.js"></script>
-    
-    <footer>
-        <p>&copy; 2025 VPN Simulation. All rights reserved.</p>
-    </footer>
 </body>
 </html>
